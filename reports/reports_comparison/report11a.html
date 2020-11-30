@@ -1,0 +1,72 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0    Source        6     7
+1    Target        6     6
+
+Column Summary
+--------------
+
+Number of columns in common: 6
+Number of columns in Source but not in Target: 0
+Number of columns in Target but not in Source: 0
+
+Row Summary
+-----------
+
+Matched on: index
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 6
+Number of rows in Source but not in Target: 1
+Number of rows in Target but not in Source: 0
+
+Number of rows with some compared columns unequal: 1
+Number of rows with all compared columns equal: 5
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 5
+Number of columns compared with all values equal: 1
+Total number of values which compare unequal: 5
+
+Columns with Unequal Values or Types
+------------------------------------
+
+    Column Source dtype Target dtype  # Unequal  Max Diff  # Null Diff
+0  address       object       object          1       0.0            0
+1      age        int64        int64          1      25.0            0
+3    email       object       object          1       0.0            0
+4   gender       object       object          1       0.0            0
+2     name       object       object          1       0.0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+       address (Source)      address (Target)
+4  27, asdassdas,adaads  29, asdassdas,adaads
+
+   age (Source)  age (Target)
+4            55          80.0
+
+  name (Source) name (Target)
+4          AAAE          AAAG
+
+  email (Source) email (Target)
+4    abg@abc.com    abi@abc.com
+
+  gender (Source) gender (Target)
+4               F               A
+
+Sample Rows Only in Source (First 10 Columns)
+---------------------------------------------
+
+    id  name               address        email  age gender
+6  7.0  AAAG  29, asdassdas,adaads  abi@abc.com   80      A
+

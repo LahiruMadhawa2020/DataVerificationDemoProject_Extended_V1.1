@@ -1,0 +1,75 @@
+{
+  "uid" : "1ee019826248b9f1",
+  "name" : "test_target_profiling_tc02",
+  "fullName" : "test_tc1_execute_testcsv#test_target_profiling_tc02",
+  "historyId" : "3e998dcadc5c9c4c5f20058153d99d5d",
+  "time" : {
+    "start" : 1606723522735,
+    "stop" : 1606723527743,
+    "duration" : 5008
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "csv_source_s2",
+    "time" : {
+      "start" : 1606723522730,
+      "stop" : 1606723522734,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "test_module_02"
+  }, {
+    "name" : "story",
+    "value" : "test_story_01"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "suite",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "host",
+    "value" : "ZSRIL-1X760Z2"
+  }, {
+    "name" : "thread",
+    "value" : "19992-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "1ee019826248b9f1.json",
+  "parameterValues" : [ ]
+}

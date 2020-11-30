@@ -1,0 +1,164 @@
+{
+  "uid" : "da9fce08f5786571",
+  "name" : "test_target_csv_general",
+  "fullName" : "test_tc1_execute_testcsv#test_target_csv_general",
+  "historyId" : "e407dd048671ab7f55fa1227adfb8767",
+  "time" : {
+    "start" : 1606724820799,
+    "stop" : 1606724820943,
+    "duration" : 144
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+  "statusTrace" : "csv_source_s2 =     ID   Name               Address        Email  Age Gender\n0  1.0   AAAA  23, asdassdas,adaads  abc@abc.com   34    ... 5.0   AAAG  29, asdassdas,adaads  abi@abc.com   80      A\n5  6.0  AAAFA  28, asdassdas,adaads  abh@abc.com   37      M\n\n    @allure.feature('test_module_02')\n    @allure.story('test_story_02')\n    @allure.severity('critical')\n    @pytest.mark.run(order=5)\n    def test_target_csv_general(csv_source_s2):\n        # csv_source_selection = csv_source_s2[(csv_source_s2.Age > 75)]\n        result = Validation().run_validation_on(csv_source_s2).expect_column_values_to_be_unique(\"ID\", \"Test - Unique value for ID\")\\\n                                                              .expect_column_values_to_not_be_null(\"ID\", \"Test - No Null values for ID\")\\\n                                                              .expect_column_value_lengths_to_equal(\"Name\", 4, \"Test - Name length is 4\")\\\n                                                              .expect_column_values_to_be_of_type(\"Name\", \"object\", \"Test - Name data type is String only\")\\\n                                                              .expect_column_values_to_be_in_set(\"Gender\", [\"M\", \"F\"], \"Test - Gender values in List\")\\\n                                                              .expect_column_values_to_match_regex(\"Email\", \"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\\\.[a-zA-Z0-9-.]+$)\", \"Test - Email format check\")\\\n                                                              .get_results()\n        \"\"\"\n            Use case description: This is a use case description, Test case 05, Validate business requirements against the data file values\n        \"\"\"\n        # perform PYTest Assertion\n>       assert TestResult().is_test_passed(result) == 'True'\nE       AssertionError: assert 'False' == 'True'\nE         - True\nE         + False\n\ntest_tc1_execute_testcsv.py:135: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "csv_source_s2",
+    "time" : {
+      "start" : 1606724820793,
+      "stop" : 1606724820799,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "test_module_02"
+  }, {
+    "name" : "story",
+    "value" : "test_story_02"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=5)"
+  }, {
+    "name" : "suite",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "host",
+    "value" : "ZSRIL-1X760Z2"
+  }, {
+    "name" : "thread",
+    "value" : "10104-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "cb1a13b9cdb0a1d6",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+      "time" : {
+        "start" : 1606723527750,
+        "stop" : 1606723527857,
+        "duration" : 107
+      }
+    }, {
+      "uid" : "14be7f3bb88860b0",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+      "time" : {
+        "start" : 1606634787502,
+        "stop" : 1606634787611,
+        "duration" : 109
+      }
+    }, {
+      "uid" : "a73c1a3ca55e3993",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+      "time" : {
+        "start" : 1606634184786,
+        "stop" : 1606634184895,
+        "duration" : 109
+      }
+    }, {
+      "uid" : "fd657f7ace2308a4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+      "time" : {
+        "start" : 1606407576097,
+        "stop" : 1606407576193,
+        "duration" : 96
+      }
+    }, {
+      "uid" : "15fe05059a6e8e80",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+      "time" : {
+        "start" : 1606407255419,
+        "stop" : 1606407255517,
+        "duration" : 98
+      }
+    }, {
+      "uid" : "47880bb7f366a2cb",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+      "time" : {
+        "start" : 1606395855097,
+        "stop" : 1606395855196,
+        "duration" : 99
+      }
+    }, {
+      "uid" : "648c69ef41e019a4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+      "time" : {
+        "start" : 1606393322977,
+        "stop" : 1606393323117,
+        "duration" : 140
+      }
+    }, {
+      "uid" : "79254f1f6f60f61d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+      "time" : {
+        "start" : 1606391412530,
+        "stop" : 1606391412758,
+        "duration" : 228
+      }
+    }, {
+      "uid" : "955462a5a1de99ed",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+      "time" : {
+        "start" : 1606374278166,
+        "stop" : 1606374278270,
+        "duration" : 104
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=5)" ]
+  },
+  "source" : "da9fce08f5786571.json",
+  "parameterValues" : [ ]
+}

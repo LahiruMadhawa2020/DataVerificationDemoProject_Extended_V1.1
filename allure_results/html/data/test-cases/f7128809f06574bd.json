@@ -1,0 +1,77 @@
+{
+  "uid" : "f7128809f06574bd",
+  "name" : "test_target_csv_business_validation",
+  "fullName" : "test_tc1_execute_testcsv#test_target_csv_business_validation",
+  "historyId" : "585930cadeb5b74202c9737fa28c9903",
+  "time" : {
+    "start" : 1606393323148,
+    "stop" : 1606393323148,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'function' object is not subscriptable",
+  "statusTrace" : "csv_source_s2 =     ID   Name               Address        Email  Age Gender\n0  1.0   AAAA  23, asdassdas,adaads  abc@abc.com   34    ... 5.0   AAAG  29, asdassdas,adaads  abi@abc.com   80      A\n5  6.0  AAAFA  28, asdassdas,adaads  abh@abc.com   37      M\n\n    @allure.feature('test_module_02')\n    @allure.story('test_story_03')\n    @allure.severity('critical')\n    @pytest.mark.run(order=6)\n    def test_target_csv_business_validation(csv_source_s2):\n>       csv_source_selection = csv_source_s1[(csv_source_s2.Age > 75)]\nE       TypeError: 'function' object is not subscriptable\n\ntest_tc1_execute_testcsv.py:131: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "csv_source_s2",
+    "time" : {
+      "start" : 1606393323145,
+      "stop" : 1606393323148,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "test_story_03"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "test_module_02"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=6)"
+  }, {
+    "name" : "suite",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "host",
+    "value" : "ZSRIL-1X760Z2"
+  }, {
+    "name" : "thread",
+    "value" : "32028-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=6)" ]
+  },
+  "source" : "f7128809f06574bd.json",
+  "parameterValues" : [ ]
+}

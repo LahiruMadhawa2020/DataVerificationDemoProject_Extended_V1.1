@@ -1,0 +1,179 @@
+{
+  "uid" : "baf0818ee592cf24",
+  "name" : "test_source_target_comparison",
+  "fullName" : "test_tc1_execute_testcsv#test_source_target_comparison",
+  "historyId" : "bdb262de352c94a4babec0c2a8777a17",
+  "time" : {
+    "start" : 1606724821174,
+    "stop" : 1606724821231,
+    "duration" : 57
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert (5, True, False) == (0, 'True', 'True')\n  At index 0 diff: 5 != 0\n  Full diff:\n  - (0, 'True', 'True')\n  + (5, True, False)",
+  "statusTrace" : "csv_source_s1 =     id   name               address        email  age gender\n0  1.0   AAAA  23, asdassdas,adaads  abc@abc.com   34    ... 6.0  AAAFA  28, asdassdas,adaads  abh@abc.com   37      M\n6  7.0   AAAG  29, asdassdas,adaads  abi@abc.com   80      A\ncsv_source_s2 =     id   name               address        email  age gender\n0  1.0   AAAA  23, asdassdas,adaads  abc@abc.com   34    ... 5.0   AAAG  29, asdassdas,adaads  abi@abc.com   80      A\n5  6.0  AAAFA  28, asdassdas,adaads  abh@abc.com   37      M\n\n    @allure.feature('test_module_03')\n    @allure.story('test_story_01')\n    @allure.severity('critical')\n    @pytest.mark.run(order=7)\n    def test_source_target_comparison(csv_source_s1, csv_source_s2):\n        comparison = Validation().compare_table1_values_with_table2_values(csv_source_s1, csv_source_s2)\n        \"\"\"\n            Use case description: This is a use case description, csv_s1.csv & csv_s2.csv data comparison\n        \"\"\"\n        # perform pytest assertion\n>       assert comparison == (0, 'True', 'True')\nE       AssertionError: assert (5, True, False) == (0, 'True', 'True')\nE         At index 0 diff: 5 != 0\nE         Full diff:\nE         - (0, 'True', 'True')\nE         + (5, True, False)\n\ntest_tc1_execute_testcsv.py:177: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "csv_source_s2",
+    "time" : {
+      "start" : 1606724821169,
+      "stop" : 1606724821173,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "csv_source_s1",
+    "time" : {
+      "start" : 1606724821165,
+      "stop" : 1606724821168,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "test_module_03"
+  }, {
+    "name" : "story",
+    "value" : "test_story_01"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=7)"
+  }, {
+    "name" : "suite",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "host",
+    "value" : "ZSRIL-1X760Z2"
+  }, {
+    "name" : "thread",
+    "value" : "10104-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "4f8d18088a155abe",
+      "status" : "broken",
+      "statusDetails" : "FileExistsError: [Errno 17] File exists: 'reports/reports_comparison/report11a.html'",
+      "time" : {
+        "start" : 1606723528019,
+        "stop" : 1606723528079,
+        "duration" : 60
+      }
+    }, {
+      "uid" : "7281336b197e41e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (False, True, False) == ('True', 'True', 'True')\n  At index 0 diff: False != 'True'\n  Full diff:\n  - ('True', 'True', 'True')\n  + (False, True, False)",
+      "time" : {
+        "start" : 1606634787785,
+        "stop" : 1606634787823,
+        "duration" : 38
+      }
+    }, {
+      "uid" : "9eb791b2f1705bc9",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (False, True, False) == ('True', 'True', 'True')\n  At index 0 diff: False != 'True'\n  Full diff:\n  - ('True', 'True', 'True')\n  + (False, True, False)",
+      "time" : {
+        "start" : 1606634185056,
+        "stop" : 1606634185099,
+        "duration" : 43
+      }
+    }, {
+      "uid" : "8a17544778ec2b2e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (False, True, False) == ('True', 'True', 'True')\n  At index 0 diff: False != 'True'\n  Full diff:\n  - ('True', 'True', 'True')\n  + (False, True, False)",
+      "time" : {
+        "start" : 1606407576338,
+        "stop" : 1606407576373,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "d3849cb6aad20a56",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (False, True, False) == ('True', 'True', 'True')\n  At index 0 diff: False != 'True'\n  Full diff:\n  - ('True', 'True', 'True')\n  + (False, True, False)",
+      "time" : {
+        "start" : 1606407255570,
+        "stop" : 1606407255604,
+        "duration" : 34
+      }
+    }, {
+      "uid" : "6fde720c15e09ed1",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (False, True, False) == ('True', 'True', 'True')\n  At index 0 diff: False != 'True'\n  Full diff:\n  - ('True', 'True', 'True')\n  + (False, True, False)",
+      "time" : {
+        "start" : 1606395855254,
+        "stop" : 1606395855289,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "2e0e11a870a9dc7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (False, True, False) == ('True', 'True', 'True')\n  At index 0 diff: False != 'True'\n  Full diff:\n  - ('True', 'True', 'True')\n  + (False, True, False)",
+      "time" : {
+        "start" : 1606393323173,
+        "stop" : 1606393323207,
+        "duration" : 34
+      }
+    }, {
+      "uid" : "431b52b744293297",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (False, True, False) == ('True', 'True', 'True')\n  At index 0 diff: False != 'True'\n  Full diff:\n  - ('True', 'True', 'True')\n  + (False, True, False)",
+      "time" : {
+        "start" : 1606391412891,
+        "stop" : 1606391412986,
+        "duration" : 95
+      }
+    }, {
+      "uid" : "3f24677b07c7a64a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (False, True, False) == ('True', 'True', 'True')\n  At index 0 diff: False != 'True'\n  Full diff:\n  - ('True', 'True', 'True')\n  + (False, True, False)",
+      "time" : {
+        "start" : 1606374278329,
+        "stop" : 1606374278364,
+        "duration" : 35
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=7)" ]
+  },
+  "source" : "baf0818ee592cf24.json",
+  "parameterValues" : [ ]
+}

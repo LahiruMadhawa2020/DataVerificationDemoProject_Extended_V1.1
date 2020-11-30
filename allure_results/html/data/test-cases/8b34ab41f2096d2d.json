@@ -1,0 +1,79 @@
+{
+  "uid" : "8b34ab41f2096d2d",
+  "name" : "test_target_profiling_tc02",
+  "fullName" : "test_tc1_execute_testcsv#test_target_profiling_tc02",
+  "historyId" : "3e998dcadc5c9c4c5f20058153d99d5d",
+  "time" : {
+    "start" : 1606634184734,
+    "stop" : 1606634184734,
+    "duration" : 0
+  },
+  "description" : "\n        Use case description: This is a use case description, Test case 04, csv_s2.csv data profiling\n    ",
+  "descriptionHtml" : "<pre><code>    Use case description: This is a use case description, Test case 04, csv_s2.csv data profiling\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: expected str, bytes or os.PathLike object, not DataFrame",
+  "statusTrace" : "csv_source_s2 =     ID   Name               Address        Email  Age Gender\n0  1.0   AAAA  23, asdassdas,adaads  abc@abc.com   34    ... 5.0   AAAG  29, asdassdas,adaads  abi@abc.com   80      A\n5  6.0  AAAFA  28, asdassdas,adaads  abh@abc.com   37      M\n\n    @allure.feature('test_module_02')\n    @allure.story('test_story_01')\n    @allure.severity('normal')\n    @pytest.mark.run(order=4)\n    def test_target_profiling_tc02(csv_source_s2):\n        # logging.info('started data profiling')\n        \"\"\"\n            Use case description: This is a use case description, Test case 04, csv_s2.csv data profiling\n        \"\"\"\n        profiling_tc02 = profilingBase(csv_source_s2)\n>       profiling_tc02.sourcedataprofiling()\n\ntest_tc1_execute_testcsv.py:113: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbaseconfig_dataProfiling\\dataprofiling_base.py:16: in sourcedataprofiling\n    file_df = os.path.basename(self.df)\n..\\..\\appdata\\local\\programs\\python\\python38\\lib\\ntpath.py:216: in basename\n    return split(p)[1]\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\np =     ID   Name               Address        Email  Age Gender\n0  1.0   AAAA  23, asdassdas,adaads  abc@abc.com   34    ... 5.0   AAAG  29, asdassdas,adaads  abi@abc.com   80      A\n5  6.0  AAAFA  28, asdassdas,adaads  abh@abc.com   37      M\n\n    def split(p):\n        \"\"\"Split a pathname.\n    \n        Return tuple (head, tail) where tail is everything after the final slash.\n        Either part may be empty.\"\"\"\n>       p = os.fspath(p)\nE       TypeError: expected str, bytes or os.PathLike object, not DataFrame\n\n..\\..\\appdata\\local\\programs\\python\\python38\\lib\\ntpath.py:185: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "csv_source_s2",
+    "time" : {
+      "start" : 1606634184731,
+      "stop" : 1606634184734,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "test_story_01"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "test_module_02"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "suite",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "host",
+    "value" : "ZSRIL-1X760Z2"
+  }, {
+    "name" : "thread",
+    "value" : "4340-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "8b34ab41f2096d2d.json",
+  "parameterValues" : [ ]
+}

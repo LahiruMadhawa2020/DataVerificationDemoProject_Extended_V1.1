@@ -1,0 +1,82 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+      "children" : [ {
+        "name" : "test_source_csv_general",
+        "uid" : "ea525e4227006956",
+        "parentUid" : "d0905bc96745969123e8cc87a949ef3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606724813452,
+          "stop" : 1606724813577,
+          "duration" : 125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_source_csv_business_validation",
+        "uid" : "3a8e2e5f740a8998",
+        "parentUid" : "d0905bc96745969123e8cc87a949ef3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606724814165,
+          "stop" : 1606724814261,
+          "duration" : 96
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_target_csv_general",
+        "uid" : "da9fce08f5786571",
+        "parentUid" : "d0905bc96745969123e8cc87a949ef3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606724820799,
+          "stop" : 1606724820943,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_target_csv_business_validation",
+        "uid" : "8c34ed8973f4eb23",
+        "parentUid" : "d0905bc96745969123e8cc87a949ef3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606724820990,
+          "stop" : 1606724821135,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d0905bc96745969123e8cc87a949ef3d"
+    }, {
+      "name" : "AssertionError: assert (5, True, False) == (0, 'True', 'True')\n  At index 0 diff: 5 != 0\n  Full diff:\n  - (0, 'True', 'True')\n  + (5, True, False)",
+      "children" : [ {
+        "name" : "test_source_target_comparison",
+        "uid" : "baf0818ee592cf24",
+        "parentUid" : "0968cbb8f0b9c503f304dfa8282e3bd6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606724821174,
+          "stop" : 1606724821231,
+          "duration" : 57
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0968cbb8f0b9c503f304dfa8282e3bd6"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

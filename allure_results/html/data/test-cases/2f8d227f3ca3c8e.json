@@ -1,0 +1,77 @@
+{
+  "uid" : "2f8d227f3ca3c8e",
+  "name" : "test_source_csv_general",
+  "fullName" : "test_tc1_execute_testcsv#test_source_csv_general",
+  "historyId" : "cdd636bd12ba0c122f79bb5f3f2845ab",
+  "time" : {
+    "start" : 1606391404705,
+    "stop" : 1606391404814,
+    "duration" : 109
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'False' == 'True'\n  - True\n  + False",
+  "statusTrace" : "csv_source_s1 =     ID   Name               Address        Email  Age Gender\n0  1.0   AAAA  23, asdassdas,adaads  abc@abc.com   34    ... 6.0  AAAFA  28, asdassdas,adaads  abh@abc.com   37      M\n6  7.0   AAAG  29, asdassdas,adaads  abi@abc.com   80      A\n\n    @allure.feature('test_module_01')\n    @allure.story('test_story_02')\n    @allure.severity('critical')\n    @pytest.mark.run(order=2)\n    def test_source_csv_general(csv_source_s1):\n        # csv_source_selection = csv_source[(csv_source.Age > 75)]\n        result = Validation().run_validation_on(csv_source_s1).expect_column_values_to_be_unique(\"ID\", \"Test- Unique value\")\\\n                                                              .expect_column_values_to_not_be_null(\"ID\", \"Test- Not Null\")\\\n                                                              .expect_column_value_lengths_to_equal(\"Name\", 4, \"Length 4 \")\\\n                                                              .expect_column_values_to_be_of_type(\"Name\", \"object\", \"data type String only\")\\\n                                                              .expect_column_values_to_be_in_set(\"Gender\", [\"M\", \"F\"], \"Values in List\")\\\n                                                              .expect_column_values_to_match_regex(\"Email\", \"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\\\.[a-zA-Z0-9-.]+$)\", \"email format check\")\\\n                                                              .get_results()\n        \"\"\"\n            Use case description: This is a use case description, Test case 02, describing me\n        \"\"\"\n        # perform PYTest Assertion\n>       assert TestResult().is_test_passed(result) == 'True'\nE       AssertionError: assert 'False' == 'True'\nE         - True\nE         + False\n\ntest_tc1_execute_testcsv.py:66: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "csv_source_s1",
+    "time" : {
+      "start" : 1606391404701,
+      "stop" : 1606391404704,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "test_module_01"
+  }, {
+    "name" : "story",
+    "value" : "test_story_02"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "suite",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "host",
+    "value" : "ZSRIL-1X760Z2"
+  }, {
+    "name" : "thread",
+    "value" : "32716-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=2)" ]
+  },
+  "source" : "2f8d227f3ca3c8e.json",
+  "parameterValues" : [ ]
+}

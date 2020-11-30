@@ -1,0 +1,77 @@
+{
+  "uid" : "dc8fac762a5ff7a7",
+  "name" : "test_target_profiling_tc02",
+  "fullName" : "test_tc1_execute_testcsv#test_target_profiling_tc02",
+  "historyId" : "3e998dcadc5c9c4c5f20058153d99d5d",
+  "time" : {
+    "start" : 1606407571203,
+    "stop" : 1606407576091,
+    "duration" : 4888
+  },
+  "description" : "\n        Use case description: This is a use case description, Test case 04, csv_s2.csv data profiling\n    ",
+  "descriptionHtml" : "<pre><code>    Use case description: This is a use case description, Test case 04, csv_s2.csv data profiling\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "csv_source_s2",
+    "time" : {
+      "start" : 1606407571200,
+      "stop" : 1606407571203,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "test_module_02"
+  }, {
+    "name" : "story",
+    "value" : "test_story_01"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "suite",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "host",
+    "value" : "ZSRIL-1X760Z2"
+  }, {
+    "name" : "thread",
+    "value" : "29400-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "dc8fac762a5ff7a7.json",
+  "parameterValues" : [ ]
+}

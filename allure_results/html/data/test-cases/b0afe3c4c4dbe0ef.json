@@ -1,0 +1,77 @@
+{
+  "uid" : "b0afe3c4c4dbe0ef",
+  "name" : "test_source_profiling_tc01",
+  "fullName" : "test_tc1_execute_testcsv#test_source_profiling_tc01",
+  "historyId" : "fb8a40eb112974914fbadd3d81f4497f",
+  "time" : {
+    "start" : 1606391395727,
+    "stop" : 1606391404696,
+    "duration" : 8969
+  },
+  "description" : "\n        Use case description: This is a use case description, Test case 01, describing me\n    ",
+  "descriptionHtml" : "<pre><code>    Use case description: This is a use case description, Test case 01, describing me\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "csv_source_s1",
+    "time" : {
+      "start" : 1606391395722,
+      "stop" : 1606391395727,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "test_module_01"
+  }, {
+    "name" : "story",
+    "value" : "test_story_01"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "host",
+    "value" : "ZSRIL-1X760Z2"
+  }, {
+    "name" : "thread",
+    "value" : "32716-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "b0afe3c4c4dbe0ef.json",
+  "parameterValues" : [ ]
+}

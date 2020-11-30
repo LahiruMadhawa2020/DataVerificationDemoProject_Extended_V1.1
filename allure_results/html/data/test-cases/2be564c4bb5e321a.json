@@ -1,0 +1,150 @@
+{
+  "uid" : "2be564c4bb5e321a",
+  "name" : "test_target_profiling_tc02",
+  "fullName" : "test_tc1_execute_testcsv#test_target_profiling_tc02",
+  "historyId" : "3e998dcadc5c9c4c5f20058153d99d5d",
+  "time" : {
+    "start" : 1606724814288,
+    "stop" : 1606724820787,
+    "duration" : 6499
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "csv_source_s2",
+    "time" : {
+      "start" : 1606724814285,
+      "stop" : 1606724814288,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "test_module_02"
+  }, {
+    "name" : "story",
+    "value" : "test_story_01"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "suite",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "host",
+    "value" : "ZSRIL-1X760Z2"
+  }, {
+    "name" : "thread",
+    "value" : "10104-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_tc1_execute_testcsv"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1ee019826248b9f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606723522735,
+        "stop" : 1606723527743,
+        "duration" : 5008
+      }
+    }, {
+      "uid" : "196cfd1f72bb0a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606634782625,
+        "stop" : 1606634787494,
+        "duration" : 4869
+      }
+    }, {
+      "uid" : "8b34ab41f2096d2d",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not DataFrame",
+      "time" : {
+        "start" : 1606634184734,
+        "stop" : 1606634184734,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "dc8fac762a5ff7a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606407571203,
+        "stop" : 1606407576091,
+        "duration" : 4888
+      }
+    }, {
+      "uid" : "54feaee2284f49ee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606407250581,
+        "stop" : 1606407255411,
+        "duration" : 4830
+      }
+    }, {
+      "uid" : "7e315c1e78d617fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606395850153,
+        "stop" : 1606395855090,
+        "duration" : 4937
+      }
+    }, {
+      "uid" : "4413de973b211f01",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606393317607,
+        "stop" : 1606393322967,
+        "duration" : 5360
+      }
+    }, {
+      "uid" : "7b7e2deb7a23814e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606391405620,
+        "stop" : 1606391412512,
+        "duration" : 6892
+      }
+    }, {
+      "uid" : "13b7c89ebbf514f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606374272822,
+        "stop" : 1606374278159,
+        "duration" : 5337
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "2be564c4bb5e321a.json",
+  "parameterValues" : [ ]
+}
